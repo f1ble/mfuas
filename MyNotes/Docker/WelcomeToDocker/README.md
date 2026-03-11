@@ -1,13 +1,5 @@
 ## Welcome to Docker
 
-> Никогда в разработке не используйте русские имена файлов и каталогов!
-> Никогда в разработке не используйте пробелы и спецюсимволы в именах файлов и каталогов!
-
-Это репозиторий для новых пользователей, начинающих работу с Docker
-
-Для выполнения задания создайте в репозитории отдельную папку `Docker`, в ней папку `img` и папку `WelcomeToDocker` и в ней файл `README.md`.
-
-Выполните все этапы работы с проектом по примеру с [Nginx](/content/Docker/ImageLibrary/Nginx.md)
 
 > Перед созданием проекта убедитесь, что порт `8088` не занят другим приложением!
 
@@ -18,17 +10,17 @@ netstat -tuln | grep :8088
 ```
 > Если эта команда ничего не возвращает, то порт свободен
 
-Проверить порт `8088` для **Windows**:
-```shell
-netstat -aon | findstr :8088
-```
+![text](../img/image.png)
 
 Загрузить образ и запустить контейнера
 ```shell
 docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
 ```
+![text](../img/image2.png)
 
 [Открыть http://localhost:8088 в браузере](http://localhost:8088)
+
+![text](../img/image3.png)
 
 Зайти в контейнер
 ```shell
@@ -41,21 +33,27 @@ docker exec -it welcome-to-docker /bin/sh
 ```shell
 uname -a
 ```
+![text](../img/image4.png)
+
 Диспетчер ресурсов
 ```shell
 top
 ```
+![text](../img/image5.png)
+
 Обновить источники приложений
 ```shell
 apk update && apk upgrade
 ```
+![text](../img/image6.png)
 Установить приложение
 ```shell
 apk add fastfetch
 ```
+![text](../img/image7.png)
+
 Запустить приложение
 ```shell
 fastfetch
 ```
-
-Результаты работы с проектом прислать в виде ссылки на `README.md` с оформленным в Markdowd текстом с скриншотами по примеру с Nginx
+![text](../img/image8.png)
