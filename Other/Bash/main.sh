@@ -22,5 +22,4 @@ if (( number > 10 )); then
 elif (( number == 10 )); then
     echo -e "\033[31m[Число = 10]\033[0m"
 else
-    echo -e "\033[31m[Число < 10]\033[0m"
-fi
+    echo -e "\033[31m[Число < 10]\033[0m"fif
