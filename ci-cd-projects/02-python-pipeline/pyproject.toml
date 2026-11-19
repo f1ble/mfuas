@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-python-app"
+version = "0.1.0"
+description = "Simple Python app for CI demo"
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+include = ["myapp*"]
